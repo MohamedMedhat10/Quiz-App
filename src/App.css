@@ -1,0 +1,88 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.quizContainer{
+  background-color: #202942 ;
+  background-color: #20242a;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  border: 3px solid #15181e;
+  min-height: 560px;
+
+}
+
+
+
+
+.quizInfo{
+  display: flex;
+  justify-content: space-between;
+}
+.questionCurrent{
+  font-family: math;
+    font-size: 30px;
+}
+
+
+.questionsAndanswers{
+  min-height: 330px;
+}
+
+.question p{
+  font-family: "Delius", cursive !important; 
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+    border: 3px solid chartreuse;
+    border-radius: 10px;
+    padding: 40px;
+    width: 80%;
+    margin: auto;
+    background-color: cadetblue;
+    margin-top: 30px;
+}
+
+.answers{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  margin: auto;
+  column-gap: 80px;
+  row-gap: 15px;
+}
+
+.correct, .false{
+  width: 100% !important;
+  border: 3px solid #382ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #15181e;
+    cursor: pointer;
+}
+
+button:is(.correct,.false){
+  color: white;
+}
+
+
+
+.answers button:nth-child(1),.answers button:nth-child(2)
+{
+  margin-top: 30px;
+}
+
+
+.falseEffect{
+  background-color: red;
+}
+
+.correctEffect{
+  background-color: greenyellow;
+  color: black !important
+  
+}
